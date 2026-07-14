@@ -153,7 +153,7 @@ function initInquiryForm() {
     // Open WhatsApp in a new tab
     window.open(whatsappUrl, '_blank');
     
-    alert('Thank you for your interest! Your details have been prepared. We are now redirecting you to WhatsApp to complete your enrollment with the Guru.');
+    alert('Thank you for your interest! Your details have been prepared. We are now redirecting you to WhatsApp to complete your enrollment with the Teacher.');
     form.reset();
   });
 }
