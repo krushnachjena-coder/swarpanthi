@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Swarpanthi - Classical Indian Vocal Music Academy. Elevate your vocal practice through structured online courses in Hindustani Music under experienced guidance.">
+  <title>Swarpanthi | Indian Classical Vocal Music Academy</title>
+  
+  <!-- Premium Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- FontAwesome Icons for clean UI accents -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- --- Header / Navigation --- -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="#hero" class="logo" style="display: flex; flex-direction: row; align-items: center; gap: 0.8rem; text-decoration: none;">
+        <img src="assets/youtube_logo.jpg" alt="Swarpanthi Logo" width="38" height="38" style="width: 38px; height: 38px; border-radius: 50%; border: 1.5px solid var(--color-accent); object-fit: cover; filter: grayscale(100%) contrast(1.15) brightness(0.95); transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1); flex-shrink: 0; display: block;">
+        <div style="display: flex; flex-direction: column;">
+          <span class="logo-main" style="font-size: 1.5rem; letter-spacing: 0.03em; line-height: 1.2;">Swarpanthi</span>
+          <span class="logo-sub" style="margin-top: -2px; line-height: 1.2;">राह रियाज़ की</span>
+        </div>
+      </a>
+      
+      <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#courses" class="nav-link">Courses</a></li>
+          <li><a href="#riyaz" class="nav-link">Riyaz Room</a></li>
+          <li><a href="#youtube" class="nav-link">Lessons</a></li>
+          <li><a href="#enroll" class="nav-link">Enroll Now</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- --- Hero Section --- -->
+  <section class="hero-section" id="hero">
+    <div class="container">
+      <div class="hero-content">
+        <p class="hero-tagline">Indian Classical Vocal Academy</p>
+        <h1 class="hero-title">Embark on Your Journey of Swara & Sadhana</h1>
+        <p class="hero-desc">Discover the depth of Hindustani Classical Vocal Music. Structured virtual training designed to take you from a curious beginner to an accomplished vocalist.</p>
+        <div class="hero-actions">
+          <a href="#courses" class="btn btn-primary">Explore Courses</a>
+          <a href="#enroll" class="btn btn-secondary">Admission Inquiry</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Decorative soundwave bar animation -->
+    <div class="soundwaves">
+      <div class="soundwave-bar"></div>
+      <div class="soundwave-bar"></div>
+      <div class="soundwave-bar"></div>
+      <div class="soundwave-bar"></div>
+      <div class="soundwave-bar"></div>
+      <div class="soundwave-bar"></div>
+      <div class="soundwave-bar"></div>
+    </div>
+  </section>
+
+  <!-- --- About & Divine Inspiration Section --- -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="section-subtitle">Our Foundation</p>
+          <h2 class="section-title" style="text-align: left; margin-bottom: 2rem;">A Legacy of Classical Vocal Artistry</h2>
+          <p>Welcome to <strong>Swarpanthi (राह रियाज़ की)</strong>, a dedicated digital sanctuary for learning Hindustani Classical and Light Vocal Music. Under the guidance of an expert guru with <strong>over two decades of vocal teaching experience</strong>, our mission is to make authentic Indian music education accessible to aspirants worldwide.</p>
+          
+          <div class="guru-highlight">
+            "Music is not merely entertainment; it is a spiritual Sadhana. The voice is the ultimate instrument that connects our inner swara to the universe."
+          </div>
+          
+          <p>We teach classical techniques using a structured approach that preserves the richness of the <em>Guru-Shishya parampara</em> while integrating the convenience of modern virtual learning systems.</p>
+        </div>
+        
+        <!-- Divine Inspiration - Shri Radha Krishna -->
+        <div class="inspiration-card">
+          <img src="assets/radha_krishna.jpg" alt="Shri Radha Krishna playing flute" class="inspiration-image">
+          <h3 class="inspiration-caption">Divine Inspiration</h3>
+          <p class="inspiration-subcaption">श्री राधा कृष्ण - राह संगीत की</p>
+          <p style="font-size: 0.95rem; text-align: center; color: var(--color-text-muted); margin: 0.5rem 0 0 0; font-style: italic;">
+            "The flute of Shri Krishna represents the divine origin of sound and devotion. We dedicate our musical journey to Their eternal melody."
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Interactive Course Explorer Section --- -->
+  <section class="section section-alt" id="courses">
+    <div class="container">
+      <p class="section-subtitle">Structured Learning Paths</p>
+      <h2 class="section-title">Explore Our Curriculums</h2>
+      
+      <!-- Tab Controls -->
+      <div class="course-tabs">
+        <button class="tab-btn active" data-level="shadaj">Level 1: Shadaj (Beginner)</button>
+        <button class="tab-btn" data-level="madhyam">Level 2: Madhyam (Intermediate)</button>
+        <button class="tab-btn" data-level="pancham">Level 3: Pancham (Advanced)</button>
+      </div>
+
+      <!-- Course Content: Shadaj -->
+      <div class="course-content active" id="course-shadaj">
+        <div class="course-grid">
+          <div>
+            <div class="course-title-block">
+              <span class="course-level">Foundation Program</span>
+              <h3 class="course-title">Swarpanthi Shadaj</h3>
+              <span class="course-duration"><i class="fa-regular fa-clock"></i> 6 Months Course (Sunday Batches)</span>
+            </div>
+            
+            <p class="course-desc">Designed specifically for musical aspirants starting their journey. This course builds a strong foundation in notes, tempo, and scale recognition.</p>
+            
+            <div class="syllabus-outline">
+              <h4 class="syllabus-heading">Course Curriculum Highlights:</h4>
+              <ul class="syllabus-list">
+                <li><strong>Alankaar Foundation:</strong> Exercises 1 to 20 in slow tempo (with and without Harmonium using Tanpura)</li>
+                <li><strong>Rhythm & Tempo:</strong> Alankaar 21 to 30; Mastery of Theka and Dugun beat counting</li>
+                <li><strong>Raag Knowledge:</strong> Initial study of Raag Yaman, Raag Kafi, and Raag Bhairav</li>
+                <li><strong>Taal Studies:</strong> Practical study of Teen Taal, Dadra, and Kahrawa</li>
+                <li><strong>Ear Training:</strong> Notes (Swar) identification and Taali-Khali rhythm counting</li>
+                <li><strong>Vocal Versatility:</strong> Basics of Bhajans, Kirtans, Folk and Ghazals</li>
+              </ul>
+            </div>
+            
+            <a href="./Swar Panthi Shadaj- Course Of Study.pdf" target="_blank" class="btn btn-secondary"><i class="fa-solid fa-file-pdf"></i> Download Complete Syllabus</a>
+          </div>
+          
+          <div class="course-meta-box">
+            <span class="meta-fee-label">Course Tuition</span>
+            <span class="meta-fee-value">₹1,500<span style="font-size: 1.2rem; font-weight: normal;"> / month</span></span>
+            <p class="meta-fee-desc">Includes 1-hour weekly live session on Sunday.<br><em>*One-time registration fee: ₹500</em></p>
+            
+            <div class="course-action-buttons">
+              <button class="btn btn-primary btn-pay-trigger" data-course="Swarpanthi Shadaj (Beginner Level)" data-amount="1500">Enroll & Pay Fees</button>
+              <a href="#enroll" class="btn btn-secondary">Submit Admission Inquiry</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Course Content: Madhyam -->
+      <div class="course-content" id="course-madhyam">
+        <div class="course-grid">
+          <div>
+            <div class="course-title-block">
+              <span class="course-level">Intermediate Program</span>
+              <h3 class="course-title">Swarpanthi Madhyam</h3>
+              <span class="course-duration"><i class="fa-regular fa-clock"></i> Sunday Batches</span>
+            </div>
+            
+            <p class="course-desc">For vocalists who have mastered basic pitches and wish to delve deeper into raag structuring, complex time cycles (taals), and harmonium self-accompaniment.</p>
+            
+            <div class="syllabus-outline">
+              <h4 class="syllabus-heading">Course Curriculum Highlights:</h4>
+              <ul class="syllabus-list">
+                <li><strong>Intermediate Alankaar:</strong> Exercises 1 to 20 in medium tempo with Tanpura</li>
+                <li><strong>Expanded Raag Knowledge:</strong> Study of Raag Yaman, Kafi, Bhairav, Khamaj, Bihag, Bhoopali, and Bilawal</li>
+                <li><strong>Improvisation:</strong> Detailed practical learning of Avaroh, Pakad, Swarmalika, and Chhota Khayal</li>
+                <li><strong>Taal Expansion:</strong> Ektaal, Jhaptaal, Rupak, Deepchandi in addition to basic taals</li>
+                <li><strong>Scale Formation:</strong> Key transposition and root note recognition</li>
+                <li><strong>Notation Writing:</strong> Writing and reading notations accurately using classical symbols</li>
+              </ul>
+            </div>
+            
+            <a href="./Swar Panthi Madhyam- Course Of Study.pdf" target="_blank" class="btn btn-secondary"><i class="fa-solid fa-file-pdf"></i> Download Complete Syllabus</a>
+          </div>
+          
+          <div class="course-meta-box">
+            <span class="meta-fee-label">Course Tuition</span>
+            <span class="meta-fee-value">₹2,000<span style="font-size: 1.2rem; font-weight: normal;"> / month</span></span>
+            <p class="meta-fee-desc">Includes 1-hour weekly live session on Sunday.<br><em>*One-time registration fee: ₹500</em></p>
+            
+            <div class="course-action-buttons">
+              <button class="btn btn-primary btn-pay-trigger" data-course="Swarpanthi Madhyam (Intermediate Level)" data-amount="2000">Enroll & Pay Fees</button>
+              <a href="#enroll" class="btn btn-secondary">Submit Admission Inquiry</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Course Content: Pancham -->
+      <div class="course-content" id="course-pancham">
+        <div class="course-grid">
+          <div>
+            <div class="course-title-block">
+              <span class="course-level">Advanced Program</span>
+              <h3 class="course-title">Swarpanthi Pancham</h3>
+              <span class="course-duration"><i class="fa-regular fa-clock"></i> Sunday Batches</span>
+            </div>
+            
+            <p class="course-desc">Our highest tier designed for experts. Focuses on advanced vocal aesthetics, raga elaboration, Vilambit khayals, complex bol-taans, and stage performance preparation.</p>
+            
+            <div class="syllabus-outline">
+              <h4 class="syllabus-heading">Course Curriculum Highlights:</h4>
+              <ul class="syllabus-list">
+                <li><strong>Vilambit Khayal:</strong> Slow-tempo compositions with detailed improvisation</li>
+                <li><strong>Vocal Techniques:</strong> Fast-paced Taans, complex Alaaps, and Boltaans</li>
+                <li><strong>Complex Taals:</strong> Mastering Ada Chautaal, Jhumra, Dhamar, and more</li>
+                <li><strong>Performance Aesthetics:</strong> Stage presence, expression control, and ragas mood mapping</li>
+                <li><strong>Riyaz Mastery:</strong> Professional practice strategies for vocal preservation and stamina</li>
+                <li><strong>Self-Accompaniment:</strong> Advanced Harmonium playing alongside vocal performance</li>
+              </ul>
+            </div>
+            
+            <a href="./Swar Panthi -QA  Course Of Study.pdf" target="_blank" class="btn btn-secondary"><i class="fa-solid fa-file-pdf"></i> Download Course Information</a>
+          </div>
+          
+          <div class="course-meta-box">
+            <span class="meta-fee-label">Course Tuition</span>
+            <span class="meta-fee-value">₹2,500<span style="font-size: 1.2rem; font-weight: normal;"> / month</span></span>
+            <p class="meta-fee-desc">Includes 1-hour weekly live session on Sunday.<br><em>*One-time registration fee: ₹500</em></p>
+            
+            <div class="course-action-buttons">
+              <button class="btn btn-primary btn-pay-trigger" data-course="Swarpanthi Pancham (Advanced Level)" data-amount="2500">Enroll & Pay Fees</button>
+              <a href="#enroll" class="btn btn-secondary">Submit Admission Inquiry</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- --- Riyaz Room Section --- -->
+  <section class="section" id="riyaz">
+    <div class="container">
+      <div class="riyaz-grid">
+        <div class="riyaz-card">
+          <h3>The Riyaz Room</h3>
+          <p>The defining feature of Swarpanthi. Understanding that learning music requires daily dedication, we provide a structured virtual collective space for regular practice.</p>
+          
+          <div class="riyaz-schedule-box">
+            <div class="riyaz-schedule-title"><i class="fa-regular fa-calendar-days"></i> Practice Schedule</div>
+            <div class="riyaz-schedule-item">
+              <span class="riyaz-days">Tuesday, Thursday, Saturday</span>
+              <span class="riyaz-time">1 Hour Practice Session</span>
+            </div>
+          </div>
+          
+          <div style="display: flex; gap: 1.5rem; flex-wrap: wrap;">
+            <button class="btn btn-gold btn-pay-trigger" data-course="Swarpanthi Riyaz Room Subscription" data-amount="1500">Join Riyaz Room (₹1,500/mo)</button>
+          </div>
+        </div>
+        
+        <div class="riyaz-features-list">
+          <div class="riyaz-feature">
+            <div class="riyaz-feature-icon">♩</div>
+            <div class="riyaz-feature-text">
+              <h4>Structured Discipline</h4>
+              <p>Overcome the hurdle of practicing alone. Sing alongside other aspirants under virtual check-ins that encourage punctuality and focus.</p>
+            </div>
+          </div>
+          
+          <div class="riyaz-feature">
+            <div class="riyaz-feature-icon">♩</div>
+            <div class="riyaz-feature-text">
+              <h4>Pitch & Tempo Consistency</h4>
+              <p>Practice voice holding, scale accuracy with Tanpura accompaniment, and beat synchronizations in real time.</p>
+            </div>
+          </div>
+          
+          <div class="riyaz-feature">
+            <div class="riyaz-feature-icon">♩</div>
+            <div class="riyaz-feature-text">
+              <h4>Guru-guided Riyaz Structure</h4>
+              <p>Follow specific vocal exercises designed to build vocal range, register stability, and breathing control systematically.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Student Prerequisites / Setup Checklist Section --- -->
+  <section class="section section-alt">
+    <div class="container">
+      <p class="section-subtitle">Getting Ready</p>
+      <h2 class="section-title">Online Classroom Requirements</h2>
+      <p style="text-align: center; max-width: 600px; margin: 0 auto 4rem auto; color: var(--color-text-muted);">To ensure the highest quality of audio and clear feedback during vocal training sessions, we recommend students prepare the following setup:</p>
+      
+      <div class="setup-container">
+        <ul class="checklist">
+          <li class="checklist-item">
+            <div class="checklist-checkbox"></div>
+            <div class="checklist-text">
+              <h4>Stable Internet Connection</h4>
+              <p>A minimum of 5 Mbps upload/download speed for seamless video and low-latency audio transmission.</p>
+            </div>
+          </li>
+          <li class="checklist-item">
+            <div class="checklist-checkbox"></div>
+            <div class="checklist-text">
+              <h4>Webcam-enabled Device</h4>
+              <p>A laptop, tablet, or desktop computer. Visual feedback is crucial for correcting sitting posture and breathing methods.</p>
+            </div>
+          </li>
+          <li class="checklist-item">
+            <div class="checklist-checkbox"></div>
+            <div class="checklist-text">
+              <h4>Headphones or Earphones</h4>
+              <p>Essential to prevent echo and feedback loops during live sessions, ensuring you hear the Tanpura clearly.</p>
+            </div>
+          </li>
+          <li class="checklist-item">
+            <div class="checklist-checkbox"></div>
+            <div class="checklist-text">
+              <h4>Electronic Tanpura App</h4>
+              <p>Apps like iShala, Tanpura Droid, or a physical electronic Tanpura configured to your vocal scale.</p>
+            </div>
+          </li>
+          <li class="checklist-item">
+            <div class="checklist-checkbox"></div>
+            <div class="checklist-text">
+              <h4>Quiet & Distraction-free Space</h4>
+              <p>A peaceful environment allows you to sing freely without external noises interfering with your microphone.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- YouTube Integration Section --- -->
+  <section class="section" id="youtube">
+    <div class="container">
+      <div class="youtube-showcase">
+        <div class="youtube-embed-wrapper">
+          <!-- Embedding the Swarpanthi Channel's introductory content or placeholder, clean frame -->
+          <iframe src="https://www.youtube.com/embed/videoseries?list=PLy5h-9s7B41o2rTjZgQ_6fW29N0tJb9d1" title="Swarpanthi Vocal Lessons" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        
+        <div class="youtube-info">
+          <p class="section-subtitle" style="text-align: left; margin-bottom: 1rem;">Video Lessons</p>
+          <h3 class="youtube-title">Learn on the Go</h3>
+          <p>In addition to our structured live batches, we regularly upload vocal guides, raga fundamentals, and performance demonstrations on our YouTube channel.</p>
+          <p style="margin-bottom: 2.5rem;">Explore free tutorials to get a sense of our teaching style and review lesson points between your weekly batches.</p>
+          
+          <a href="https://www.youtube.com/@swarpanthi400" target="_blank" class="btn btn-primary"><i class="fa-brands fa-youtube"></i> Subscribe on YouTube</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Admissions & Inquiry Form Section --- -->
+  <section class="section section-alt" id="enroll">
+    <div class="container">
+      <p class="section-subtitle">Join the Academy</p>
+      <h2 class="section-title">Begin Your Enrollment</h2>
+      
+      <div class="inquiry-grid">
+        <div class="inquiry-form-card">
+          <h3 class="form-title">Send Admission Enquiry</h3>
+          <p class="form-subtitle">Fill out this quick form, and we will get back to you with batch availability and scale assignments.</p>
+          
+          <form id="enrollForm">
+            <div class="form-group">
+              <label for="studentName" class="form-label">Full Name</label>
+              <input type="text" id="studentName" class="form-input" placeholder="e.g. Rahul Sharma" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="studentEmail" class="form-label">Email Address</label>
+              <input type="email" id="studentEmail" class="form-input" placeholder="e.g. rahul@example.com" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="studentPhone" class="form-label">Phone / WhatsApp Number</label>
+              <input type="tel" id="studentPhone" class="form-input" placeholder="e.g. +91 98765 43210" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="studentLevel" class="form-label">Desired Course Level</label>
+              <select id="studentLevel" class="form-select" required>
+                <option value="Shadaj (Beginner)">Level 1: Shadaj (Beginner)</option>
+                <option value="Madhyam (Intermediate)">Level 2: Madhyam (Intermediate)</option>
+                <option value="Pancham (Advanced)">Level 3: Pancham (Advanced)</option>
+                <option value="Riyaz Room only">Riyaz Room Session Subscription</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="studentNotes" class="form-label">Prior Music Background (if any)</label>
+              <textarea id="studentNotes" class="form-textarea" placeholder="e.g. Have you learned vocal music before? What scale do you sing on?"></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Enrollment Request</button>
+          </form>
+        </div>
+        
+        <!-- Direct Connection (Guru WhatsApp info) -->
+        <div class="direct-connect-card">
+          <h3 class="connect-title">Connect Directly</h3>
+          <p class="connect-desc">Have urgent questions or want a quick consultation with the Guru to identify your level? Connect with us directly via WhatsApp or phone call.</p>
+          
+          <div style="margin-bottom: 3rem;">
+            <div class="contact-meta-item">
+              <i class="fa-solid fa-phone contact-meta-icon"></i>
+              <div>
+                <div style="font-size: 0.8rem; text-transform: uppercase; color: var(--color-text-muted);">Call For Inquiries</div>
+                <div class="contact-meta-text">+91 9579127420</div>
+              </div>
+            </div>
+            
+            <div class="contact-meta-item">
+              <i class="fa-solid fa-location-dot contact-meta-icon"></i>
+              <div>
+                <div style="font-size: 0.8rem; text-transform: uppercase; color: var(--color-text-muted);">Location</div>
+                <div class="contact-meta-text">Online Classes (India & Global)</div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- WhatsApp chat launch -->
+          <a href="https://wa.me/919579127420?text=Hello%20Swarpanthi%20Academy%2C%20I%20would%20like%20to%20know%20more%20about%20the%20classical%20music%20batches." target="_blank" class="btn btn-whatsapp"><i class="fa-brands fa-whatsapp" style="font-size: 1.2rem; margin-right: 0.5rem;"></i> Chat with Us on WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- FAQ Section --- -->
+  <section class="section">
+    <div class="container">
+      <p class="section-subtitle">Frequently Asked Questions</p>
+      <h2 class="section-title">Common Enquiries</h2>
+      
+      <div class="faq-container">
+        
+        <div class="faq-item">
+          <button class="faq-trigger">
+            <span class="faq-question">I am an absolute beginner. Which course should I join?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-content">
+            <p>You should join our <strong>Swarpanthi Shadaj</strong> course. It is custom-designed for beginners to build pitch stability, master the first 30 Alankaars in slow tempo, identify notes (swaras), and understand basic rhythm counts (Taali/Khali) before advancing.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <button class="faq-trigger">
+            <span class="faq-question">How are the classes conducted?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-content">
+            <p>All classes are held virtually in real-time batches on Sundays. We use video conferencing platforms where students receive live instruction and direct feedback from the Guru. Batches are structured, small, and interactive.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <button class="faq-trigger">
+            <span class="faq-question">What is the "Riyaz Room" and is it mandatory?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-content">
+            <p>The Riyaz Room is a unique practice chamber that meets for 1 hour on Tuesdays, Thursdays, and Saturdays. It is not mandatory but highly recommended. It serves as a collective space where students do guided vocal warm-ups, pitch sustaining exercises, and Alankaar repetition to build routine, voice strength, and consistency.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <button class="faq-trigger">
+            <span class="faq-question">How do I pay the fees? Do you accept international payments?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-content">
+            <p>Fees are payable monthly. We support various digital payment methods including UPI, credit/debit cards, and Net Banking. For international students outside India, we can configure secure global payment links to accept international credit cards.</p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Footer --- -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h4>Swarpanthi</h4>
+          <p class="hindi-text" style="color: var(--color-accent); margin-bottom: 1.5rem;">राह रियाज़ की</p>
+          <p>Empowering vocal music aspirants globally with structured Hindustani Classical Vocal guidance. Over two decades of teaching legacy brought online.</p>
+        </div>
+        
+        <div class="footer-links-col">
+          <h5>Academy Paths</h5>
+          <ul class="footer-links">
+            <li><a href="#courses">Swarpanthi Shadaj</a></li>
+            <li><a href="#courses">Swarpanthi Madhyam</a></li>
+            <li><a href="#courses">Swarpanthi Pancham</a></li>
+            <li><a href="#riyaz">The Riyaz Room</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links-col">
+          <h5>Connect</h5>
+          <ul class="footer-links">
+            <li><a href="https://www.youtube.com/@swarpanthi400" target="_blank"><i class="fa-brands fa-youtube"></i> YouTube</a></li>
+            <li><a href="https://wa.me/919579127420" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp Chat</a></li>
+            <li><a href="#enroll"><i class="fa-solid fa-envelope"></i> Email Enquiry</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Swarpanthi Classical Music Academy. All rights reserved.</p>
+        <p>Inspiration: Shri Radha Krishna | Design: Antigravity</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- --- Mock Payment Modal Window --- -->
+  <div class="payment-modal" id="paymentModal">
+    <div class="modal-overlay"></div>
+    <div class="modal-card">
+      <button class="modal-close" id="closeModal">&times;</button>
+      
+      <div class="modal-header">
+        <h3>Swarpanthi Academy Checkout</h3>
+        <p style="color: var(--color-text-muted); font-size: 0.9rem; margin-top: 0.3rem;">Secure Registration Portal</p>
+      </div>
+
+      <!-- Payment Breakdown Table -->
+      <table class="payment-details-table" id="detailsTable">
+        <tr>
+          <td class="label">Course Name</td>
+          <td class="value" id="modalCourseName">Swarpanthi Shadaj</td>
+        </tr>
+        <tr>
+          <td class="label">Monthly Tuition</td>
+          <td class="value" id="modalCourseFee">₹1,500</td>
+        </tr>
+        <tr>
+          <td class="label">One-Time Registration</td>
+          <td class="value" id="modalAdmissionFee">₹500</td>
+        </tr>
+        <tr class="total-row" style="border-top: 2px solid var(--color-accent);">
+          <td class="label" style="font-weight: bold; color: var(--color-secondary);">Total Payable</td>
+          <td class="value" id="modalTotalFee" style="font-weight: bold;">₹2,000</td>
+        </tr>
+      </table>
+
+      <!-- Checkout Form -->
+      <form id="modalCheckoutForm">
+        <div class="form-group">
+          <label for="payName" class="form-label">Student Full Name</label>
+          <input type="text" id="payName" class="form-input" placeholder="e.g. Rahul Sharma" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="payEmail" class="form-label">Email Address</label>
+          <input type="email" id="payEmail" class="form-input" placeholder="e.g. rahul@example.com" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="payPhone" class="form-label">Mobile Number</label>
+          <input type="tel" id="payPhone" class="form-input" placeholder="e.g. 9876543210" required>
+        </div>
+        
+        <div style="font-size: 0.8rem; color: var(--color-text-muted); margin-bottom: 1.5rem; text-align: center;">
+          <i class="fa-solid fa-lock" style="color: #25D366;"></i> SSL Secured Payment Simulation
+        </div>
+        
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Pay Fees & Enroll</button>
+      </form>
+
+      <!-- Payment Success State (Hidden by default) -->
+      <div class="payment-success-graphic" id="successGraphic">
+        <div class="success-icon">✓</div>
+        <h3 style="color: #25D366; margin-bottom: 1rem;">Payment Successful</h3>
+        <p id="successDetails" style="font-size: 1rem; color: var(--color-text-main); margin-bottom: 1.5rem; line-height: 1.6;"></p>
+        
+        <div style="background-color: var(--color-bg-alt); padding: 1rem; border-radius: 8px; font-family: var(--font-sans); font-size: 0.85rem; width: 100%; margin-bottom: 2rem;">
+          <span style="color: var(--color-text-muted);">Transaction ID:</span> <strong id="successTxId" style="color: var(--color-secondary);">TXN-12345678</strong>
+        </div>
+        
+        <p style="font-size: 0.85rem; color: var(--color-text-muted); margin: 0; font-style: italic;">You can close this window now. Welcome to the academy!</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- --- Script Imports --- -->
+  <script src="app.js"></script>
+</body>
+</html>
