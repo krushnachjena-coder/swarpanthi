@@ -189,7 +189,7 @@ img {
   font-family: var(--font-hindi);
   font-size: 0.85rem; /* Sized down slightly */
   color: var(--color-primary);
-  margin-top: 3px;
+  margin-top: 5px; /* Increased separation space */
   padding-left: 0;
   line-height: 1.2;
 }
@@ -1252,6 +1252,10 @@ img {
   }
   .mobile-nav-toggle {
     display: block;
+    order: 3; /* Push to far right */
+  }
+  .header-container nav {
+    order: 2; /* Position middle wrapper */
   }
   .mobile-nav-toggle.active span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
